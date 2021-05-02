@@ -56,3 +56,22 @@ export const CATALOGUES = {
     },
   ],
 };
+
+export const CONTENT_ITEMS = {
+  projectexamples:
+    [
+      {
+        id: '001',
+        image: 'job1.png',
+      },
+      {
+        id: '002',
+        image: 'job2.png',
+      },
+      {
+        id: '003',
+        image: 'job3.png',
+      },
+    ],
+
+};

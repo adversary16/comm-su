@@ -38,6 +38,9 @@ const GenericHeader = () => {
       <title>{t(`header.${asPath}`)}</title>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet"/>
+      <meta property="og:title" content="Системный интегратор COMMUNICATIONS.SU" />
+      <meta property="og:description" content="Промышленная связь и системы оповещения для производств." />
+      <meta property="og:image" content="/comm_logo_ru.png" />
     </Head>
     <div className={styles.root}>
       <Logo
