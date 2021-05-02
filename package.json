@@ -1,0 +1,30 @@
+{
+  "name": "communications-su",
+  "version": "1.0.0",
+  "description": "website for communications.su",
+  "main": ".",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^10.2.0",
+    "next-translate": "^1.0.6",
+    "nextjs": "0.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.18",
+    "sass": "^1.32.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-react": "0.0.4"
+  }
+}

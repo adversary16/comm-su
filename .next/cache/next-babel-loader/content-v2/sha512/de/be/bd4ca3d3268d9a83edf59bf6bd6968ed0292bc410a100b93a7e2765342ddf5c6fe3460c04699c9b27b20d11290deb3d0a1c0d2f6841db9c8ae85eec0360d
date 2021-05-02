@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as Catalogue } from './Catalogue';","map":{"version":3,"sources":["/home/nikita/comm-su/src/components/Catalogue/index.js"],"names":["default","Catalogue"],"mappings":"AAAA,SAAQA,OAAO,IAAIC,SAAnB,QAAmC,aAAnC","sourcesContent":["export {default as Catalogue} from './Catalogue';\n"]},"metadata":{},"sourceType":"module"}

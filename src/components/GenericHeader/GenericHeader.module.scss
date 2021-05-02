@@ -1,0 +1,33 @@
+.root{
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  .logo{
+    cursor: pointer;
+    height: 4rem !important;
+    width: 234px !important;
+    min-width: 234px !important;
+    max-width: 234px !important;
+  }
+}
+
+.menuButton{
+  display: none;
+  background: var(--icon-menu);
+  background-color: var(--primary);
+  height: 100%;
+  width: 4rem;
+  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 720px){
+  .root{
+    visibility: visible;
+    .menuButton{
+      display: block;
+    }
+  }
+}

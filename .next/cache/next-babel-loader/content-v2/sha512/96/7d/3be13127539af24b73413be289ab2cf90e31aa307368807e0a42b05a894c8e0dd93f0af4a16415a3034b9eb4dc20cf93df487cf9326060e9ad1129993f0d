@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default as SectionHeader } from './SectionHeader';","map":{"version":3,"sources":["/home/nikita/comm-su/src/components/SectionHeader/index.js"],"names":["default","SectionHeader"],"mappings":"AAAA,SAAQA,OAAO,IAAIC,aAAnB,QAAuC,iBAAvC","sourcesContent":["export {default as SectionHeader} from './SectionHeader';\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,127 @@
+.root{
+  display: flex;
+  height: 100%;
+  background-color: var(--primary);
+  .link{
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--white);
+    text-decoration: none;
+    padding: 1.5rem;
+    &.current {
+      background-color: var(--secondary);
+    }
+  };
+  .secondaryMenu {
+    margin: 0 1rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    .link {
+      display: flex;
+      padding: 0.2rem;
+      height: 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+    }
+    .blog {
+      &::before{
+        content: var(--icon-blog);
+        width: 1rem;
+        margin: 0 0.2rem 0 0;
+      }
+    }
+    .press {
+      &::before{
+        content: var(--icon-press);
+        width: 1rem;
+        margin: 0 0.2rem 0 0;
+      }
+    }
+  }
+  .locales {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2rem 0 0;
+    .link {
+      cursor: pointer;
+      font-size: 0.8rem;
+      padding: 0.2rem;
+    }
+  }
+  .contacts {
+    display: flex;
+    height: 100%;
+    background-color: var(--white);
+    align-content: center;
+    padding: 0 1rem 0 0;
+    width: 16rem;
+    .link {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--primary);
+      line-height: 2rem;
+      padding: 0;
+      margin: auto 0;
+    }
+    .phone {
+      height: 2rem;
+      width: 2rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: var(--icon-phone);
+      background-color: var(--primary);
+      border-radius: 1rem;
+      margin: auto 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .root{
+    display: none;
+    width: 0rem;
+    height: 0rem;
+    transition: all 1s ease-out;
+    &.isOpen {
+      display: flex;
+      flex-direction: column;
+      position:absolute;
+      width: 100%;
+      top: 4rem;
+      transition: height 1s;
+      height: auto;
+      z-index: 100;
+      .link:not(.contacts .link){
+        background-color: var(--primary);
+        &.current {
+          background-color: var(--secondary);
+        }
+      }
+      .locales, .secondaryMenu {
+        height: 2rem;
+        padding: 0;
+        margin: 0 auto;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        .link{
+        font-weight: 100;
+        margin: 0.2rem;
+        }
+      }
+      .contacts{
+        padding: 0.2rem 0;
+        width: 100%;
+      }
+    }
+  }
+}

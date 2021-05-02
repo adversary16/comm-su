@@ -1,0 +1,16 @@
+{
+  "test":"Это тестовый текст",
+  "siteName": "Communications.su - Системная Интеграция",
+  "header": {
+    "/": "Communications.su - Системная Интеграция",
+    "/about": "О компании",
+    "/solution": "Решения",
+    "/project": "Проекты",
+    "/support": "Поддержка",
+    "/programma-po-sodejstviyu-proektirovshchikam":"Проектировщикам",
+    "/svyaz-s-nami":"Контакты",
+    "/blog": "Блог",
+    "/press": "Пресс-центр"
+  },
+  "phoneNumber":"+7 (800) 700-94-83"
+}
