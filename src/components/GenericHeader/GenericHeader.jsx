@@ -12,10 +12,8 @@ const Logo = ({locale, layout}) => {
     <Link
       href={'/'}
     >
-      <Image
+      <img
         src="/comm_logo_ru.png"
-        height="64"
-        width="234"
         className={styles.logo}
       />
     </Link>);

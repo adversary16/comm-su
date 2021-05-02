@@ -13,6 +13,9 @@
     &.current {
       background-color: var(--secondary);
     }
+    &:hover {
+      background-color: var(--tertiary);
+    }
   };
   .secondaryMenu {
     margin: 0 1rem 0 2rem;
