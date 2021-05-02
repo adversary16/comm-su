@@ -15,7 +15,7 @@ const Logo = ({locale, layout}) => {
       <Image
         src="/comm_logo_ru.png"
         height="64"
-        width="256"
+        width="234"
         className={styles.logo}
       />
     </Link>);

@@ -25,3 +25,6 @@ export const ROUTES = {
   },
 };
 
+export const PATHS = {
+  BANNER: '/banners/',
+};
