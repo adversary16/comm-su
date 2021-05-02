@@ -5,8 +5,13 @@ import styles from './Banner.module.scss';
 import {BANNERS} from '../../const/content';
 import {PATHS} from '../../const/routes';
 
-const Paginator = () => {
-  return <div></div>;
+const Paginator = ({bannerList}) => {
+  return <div className={styles.pagination}>
+    { bannerList.map((_) =>
+      <div className={styles.pagedot}/>,
+    )
+    }
+  </div>;
 };
 
 const Banner = () => {
@@ -16,13 +21,12 @@ const Banner = () => {
   return <div className={styles.root}>
     {
       bannerList.map(({link, file}) =>
-        <Image
+        <img
           src={`${PATHS.BANNER}${file}`}
-          width={1920}
-          height={404}
           key={file}
         />)
     }
+    <Paginator {...{bannerList}}/>
   </div>;
 };
 export default Banner;

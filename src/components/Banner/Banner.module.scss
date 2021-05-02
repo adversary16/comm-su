@@ -5,11 +5,23 @@
   height: 404px;
   overflow: hidden;
   position: relative;
-  div{
-    display: block !important;
-  }
 }
 
+.pagination {
+  position: absolute;
+  z-index: 90;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .pagedot {
+    height: 0.5rem; 
+    width: 0.5rem;
+    background-color: var(--white);
+    border-radius: 0.25rem;
+    margin: 0 0.5rem;
+  }
+}
 @media screen and (max-width: 720px){
   .root{
     display: flex;

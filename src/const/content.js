@@ -4,10 +4,10 @@ export const BANNERS = {
       file: '1.jpg',
       link: '',
     },
-    // {
-    //   file: '2.jpg',
-    //   link: '',
-    // },
+    {
+      file: '2.jpg',
+      link: '',
+    },
     // {
     //   file: '3.jpg',
     //   link: '',
