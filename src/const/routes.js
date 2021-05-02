@@ -17,7 +17,11 @@ export const ROUTES = {
   '/svyaz-s-nami': {
     navBar: true,
   },
-  '/blog': {},
-  '/press': {},
+  '/blog': {
+    icon: 'blog',
+  },
+  '/press': {
+    icon: 'press',
+  },
 };
 
