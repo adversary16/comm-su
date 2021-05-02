@@ -3,8 +3,10 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/blog": "pages/blog.js",
-  "/programma-po-sodejstviyu-proektirovshchikam": "pages/programma-po-sodejstviyu-proektirovshchikam.js",
   "/press": "pages/press.js",
-  "/support": "pages/support.js",
-  "/svyaz-s-nami": "pages/svyaz-s-nami.js"
+  "/about": "pages/about.js",
+  "/project": "pages/project.js",
+  "/solution": "pages/solution.js",
+  "/programma-po-sodejstviyu-proektirovshchikam": "pages/programma-po-sodejstviyu-proektirovshchikam.js",
+  "/support": "pages/support.js"
 }

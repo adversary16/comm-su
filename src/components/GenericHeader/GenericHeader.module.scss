@@ -5,5 +5,27 @@
   justify-content: space-between;
   .logo{
     cursor: pointer;
+    height: 4rem;
+    min-width: 8rem;
+  }
+}
+
+.menuButton{
+  display: none;
+  background: var(--icon-menu);
+  background-color: var(--primary);
+  height: 100%;
+  width: 4rem;
+  background-size: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 720px){
+  .root{
+    visibility: visible;
+    .menuButton{
+      display: block;
+    }
   }
 }

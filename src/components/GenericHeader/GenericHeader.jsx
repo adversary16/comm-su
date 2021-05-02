@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -21,8 +21,17 @@ const Logo = ({locale, layout}) => {
     </Link>);
 };
 
+const MenuButton = ({onClick}) => {
+  return <div className={styles.menuButton} onClick={onClick}/>;
+};
+
 const GenericHeader = () => {
   const {asPath, locale} = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    return setIsMenuOpen((prevState) => !prevState);
+  };
+
   const {t} = useTranslation('common');
   return <>
     <Head>
@@ -34,7 +43,8 @@ const GenericHeader = () => {
       <Logo
         {...{locale}}
       />
-      <Navbar/>
+      <Navbar {...{isMenuOpen}}/>
+      <MenuButton onClick={toggleMenu}/>
     </div>
   </>;
 };
