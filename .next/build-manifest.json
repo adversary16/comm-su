@@ -33,6 +33,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
+    ],
+    "/programma-po-sodejstviyu-proektirovshchikam": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/programma-po-sodejstviyu-proektirovshchikam.js"
+    ],
+    "/project": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/project.js"
     ]
   },
   "ampFirstPages": []
