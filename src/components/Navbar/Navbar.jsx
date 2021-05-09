@@ -36,7 +36,7 @@ const SecondaryMenu = ({secondaryRoutes, t, route}) => {
                   properties.icon && styles[properties.icon],
                   (route === alias) && styles.current)
             }>
-            {t(`header.${alias}`)}
+            {t(`header.${alias}.title`)}
           </a>
         </Link>,
       )
@@ -106,7 +106,7 @@ const Navbar = ({isMenuOpen}) => {
             className={
               classNames(styles.link, (route === alias) && styles.current)
             }>
-            {t(`header.${alias}`)}
+            {t(`header.${alias}.title`)}
           </a>
         </Link>,
       )

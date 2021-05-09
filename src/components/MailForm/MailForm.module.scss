@@ -2,6 +2,7 @@
   background-color: var(--white);
   display: flex;
   flex-direction: column;
+  padding: 1rem 0;
   .header, input, label, button{
     margin: 1rem 0 0 2rem;
   }
@@ -23,7 +24,7 @@
   }
   button {
     width: 20rem;
-    margin: 1rem 0 0 2rem;
+    margin: 1rem 0 1rem 2rem;
     padding: 1rem;
     background-color: var(--secondary);
     color: var(--white);

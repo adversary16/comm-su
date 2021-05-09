@@ -1,0 +1,27 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: var(--blockWidth);
+  min-width: var(--minBlockWidth);
+  margin: 1rem 20% 1rem 20%;
+  .header {
+    display: flex;
+    color: var(--primary);
+  }
+  .title {
+    line-height: 1.5rem;
+  }
+  .content{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+}
+
+.icon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2.5rem;
+  border: 0.3rem solid var(--primary);
+  padding: 0.5rem;
+  margin: 0 1rem;
+}

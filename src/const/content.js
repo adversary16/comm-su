@@ -79,3 +79,29 @@ export const CONTENT_ITEMS = {
 export const CONTACTS = {
 
 };
+
+export const SUBPAGES = {
+  '/about': [
+    {
+      path: 'history',
+    },
+    {
+      path: 'clients',
+    },
+    {
+      path: 'partners',
+    },
+    {
+      path: 'policy',
+    },
+    {
+      path: 'feedback',
+    },
+    {
+      path: 'career',
+    },
+    {
+      path: 'board',
+    },
+  ],
+};

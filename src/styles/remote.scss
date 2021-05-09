@@ -4,6 +4,9 @@
   --tertiary: #84c1edff;
   --white: #fff;
   --gray: rgba(34, 34, 34, 0.2);
+  --blockWidth: 60%;
+  --minBlockWidth: 30rem;
+  --maxBlockWidth: 60rem; 
 }
 body{
   height: fit-content;

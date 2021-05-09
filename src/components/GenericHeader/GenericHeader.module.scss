@@ -21,6 +21,29 @@
   background-repeat: no-repeat;
 }
 
+.sub_root{
+  display: flex;
+  width: 100%;
+  background-color: var(--tertiary);
+  justify-content: center;
+  .link {
+    display: flex;
+    height: 3rem;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    line-height: 3rem;
+    padding: 0 2rem;
+    font-weight: 600;
+    color: var(--white);
+    cursor: pointer;
+    &:hover{
+      background-color: white;
+      color: var(--primary)
+    }
+  }
+}
+
 @media screen and (max-width: 720px){
   .root{
     visibility: visible;

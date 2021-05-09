@@ -2,15 +2,28 @@
   "test":"Это тестовый текст",
   "siteName": "Communications.su - Системная Интеграция",
   "header": {
-    "/": "Communications.su - Системная Интеграция",
-    "/about": "О компании",
-    "/solution": "Решения",
-    "/project": "Проекты",
-    "/support": "Поддержка",
-    "/programma-po-sodejstviyu-proektirovshchikam":"Проектировщикам",
-    "/svyaz-s-nami":"Контакты",
-    "/blog": "Блог",
-    "/press": "Пресс-центр"
+    "/":{ 
+      "title": "Communications.su - Системная Интеграция"
+    },
+    "/about": {
+      "title": "О компании",
+      "subroutes": {
+        "history":{ "title": "История"},
+        "clients": { "title": "Клиенты"},
+        "partners": { "title": "Партнёры"},
+        "policy": { "title": "Политика качества"},
+        "feedback": { "title": "Отзывы"},
+        "career": { "title": "Карьера"},
+        "board": {  "title": "Руководящий состав"}
+      }
+    },
+    "/solution": { "title": "Решения"},
+    "/project": {"title": "Проекты"},
+    "/support": {"title": "Поддержка"},
+    "/programma-po-sodejstviyu-proektirovshchikam": { "title": "Проектировщикам"},
+    "/svyaz-s-nami":{"title": "Контакты"},
+    "/blog": {"title": "Блог"},
+    "/press": {"title": "Пресс-центр"}
   },
   "phoneNumber":"+7 (800) 700-94-83"
 }

@@ -3,6 +3,7 @@
   "defaultLocale": "ru",
   "pages": {
     "*": ["common", "mailer"],
-    "/": ["main"]
+    "/": ["main"],
+    "/about": ["about"]
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './SectionHeader.module.scss';
 const SectionHeader = ({t, name}) => {
-  return <div className={styles.root}>
+  return <a name={name} className={styles.root}>
     {t(name)}
-  </div>;
+  </a>;
 };
 export default SectionHeader;
