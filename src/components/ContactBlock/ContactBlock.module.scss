@@ -1,0 +1,26 @@
+.root {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: var(--tertiary);
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+}
+
+.contentblock {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0 0;
+  span{
+    display: block;
+    font-weight: 400;
+    color: var(--white);
+  }
+}
+
+.mailform {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  padding: 1rem 0 0 0;
+}

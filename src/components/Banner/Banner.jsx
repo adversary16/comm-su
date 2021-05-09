@@ -7,8 +7,8 @@ import {PATHS} from '../../const/routes';
 
 const Paginator = ({bannerList}) => {
   return <div className={styles.pagination}>
-    { bannerList.map((_) =>
-      <div className={styles.pagedot}/>,
+    { bannerList.map((_, index) =>
+      <div className={styles.pagedot} key={index}/>,
     )
     }
   </div>;

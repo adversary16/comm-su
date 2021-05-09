@@ -75,3 +75,7 @@ export const CONTENT_ITEMS = {
     ],
 
 };
+
+export const CONTACTS = {
+
+};

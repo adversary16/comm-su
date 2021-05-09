@@ -4,8 +4,7 @@ import {Banner} from '../components/Banner/';
 import {Catalogue} from '../components/Catalogue';
 import {SectionHeader} from '../components/SectionHeader';
 import GalleryStack from '../components/GalleryStack/GalleryStack';
-import {Feed} from '../components/Feed';
-import {ThreeColSection} from '../components/ThreeColSection';
+import {ContactBlock} from '../components/ContactBlock';
 
 const Index = () => {
   const {t} = useTranslation('main');
@@ -15,11 +14,12 @@ const Index = () => {
     <Catalogue {...{t}}/>
     <SectionHeader {...{t, name: 'projectexamples'}}/>
     <GalleryStack {...{t, contentId: 'projectexamples'}}/>
-    <SectionHeader {...{t, name: 'presscenter'}}/>
-    <ThreeColSection>
+    <SectionHeader {...{t, name: 'contacts'}}/>
+    <ContactBlock/>
+    {/* <ThreeColSection>
       <Feed type={'press'} columnStart={1} columnWidth={1}/>
       <Feed type={'news'} columnStart={2} columnWidth={2}/>
-    </ThreeColSection>
+    </ThreeColSection> */}
   </>;
 };
 

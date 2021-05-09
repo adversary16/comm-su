@@ -13,7 +13,7 @@ const PhoneIcon = () => {
 const ContactBlock = ({t}) => {
   return <div className={styles.contacts}>
     <PhoneIcon/>
-    <Link href={`phone://${t('phonenumber')}`}>
+    <Link href={`phone://${t('phoneNumber')}`}>
       <a className={classNames(styles.link)}>
         {t('phoneNumber')}
       </a>

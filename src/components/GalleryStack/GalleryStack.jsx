@@ -9,7 +9,6 @@ const GalleryStack = ({t, contentId}) => {
       image, title, text, id,
     };
   });
-  console.log(content);
   return (
     <div className={styles.root}>
       {
