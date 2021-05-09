@@ -1,0 +1,35 @@
+.root{
+  background-color: var(--secondary);
+  display: flex;
+  height: 20rem;
+  padding: 1rem 0 0 0;
+  justify-content: center;
+  .year{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    font-weight: bold;
+    justify-content: flex-start;
+    height: 10rem;
+    width: 20rem;
+    .title{
+      display: block;
+      border-left: solid 0.5rem var(--white);
+      padding: 0.5rem;
+    }
+    .content{
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  .year:nth-child(even){
+    justify-content: flex-end;
+    border-bottom: solid 0.5rem var(--white);
+  }
+  .year:nth-child(odd){
+    border-top: solid 0.5rem var(--white);
+    margin-top: 10rem;
+
+  }
+}
