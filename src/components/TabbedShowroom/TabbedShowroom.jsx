@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactHtmlParser from 'react-html-parser';
 import styles from './TabbedShowroom.module.scss';
 import {useRouter} from 'next/router';
 import classNames from 'classnames';
@@ -15,6 +16,7 @@ const ContentsTab = ({content, onSelection, pickedContent}) => {
         }}
       >
         <span className={styles.title}>{title[locale] || Object.values(title)[0]}</span>
+        <span className={styles.backgrounder}/>
       </div>)
     }
   </div>;
@@ -24,9 +26,15 @@ const MainTab = ({content}) => {
   const {locale} = useRouter();
   const {image, title, description} = content;
   return <div className={styles.main_root}>
-    <div className={styles.title}>{title[locale] || Object.values(title)[0]}</div>
-    <div className={styles.image}><img src={image}/></div>
-    <div className={styles.description}>{ description && (description[locale] || Object.values(description)[0])}</div>
+    <div
+      className={styles.image}
+      style={{'background-image': `url(${image})`}}>
+
+    </div>
+    <div className={styles.text}>
+      <h1 className={styles.title}>{title[locale] || Object.values(title)[0]}</h1>
+      <div className={styles.description}>{ ReactHtmlParser(description && (description[locale] || Object.values(description)[0]))}</div>
+    </div>
   </div>;
 };
 const TabbedShowroom = ({content}) => {

@@ -30,6 +30,7 @@ justify-content: center;
     background-size: 40rem;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
     .title{
       font-size: 1rem;
       font-weight: 700;
@@ -37,18 +38,27 @@ justify-content: center;
       margin: auto 0;
       padding: 1rem;
       width: 20rem;
+      z-index: 10;
+    }
+    .backgrounder{
+      width: 100%;
+      height: 100%;
+      position: absolute;
       background-color: rgba($color: #1d2d61ff, $alpha: 0.6);
+      z-index:5;
     }
     &:hover{
-      .title{
-        background-color: rgba($color: #1d2d61ff, $alpha: 0.3);
+      .backgrounder{
+        background-color: rgba($color: #1d2d61ff, $alpha: 0.3);  
       }
     }
     &.picked {
       border-bottom: 0.3rem solid var(--secondary);
       .title{
-        background-color: rgba($color: #1d2d61ff, $alpha: 0.1);
-        color: var(--primary)
+        background-color: rgba($color: #1d2d61ff, $alpha: 0.5);
+      }
+      .backgrounder{
+        background-color: rgba($color: #1d2d61ff, $alpha: 0.1);  
       }
     }
     .preview {
@@ -66,13 +76,32 @@ justify-content: center;
 }
 
 .main_root{
-  display: flex;
-  flex-direction: column;
-  grid-area: main;
+  display: grid;
+  grid-template: "image caption" auto /50%;
+  align-content: center;
+  justify-content: center;
   .image{
-    width: 50rem;
-    img{
-      width: 100%;
+    padding: 2rem 0 0 0;
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .text{
+    padding: 2rem 0 0 0;
+    grid-area: caption;
+    min-height: 80vh;
+    background-color: var(--primary);
+    color: var(--white);
+    .title{
+      padding: 1rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .description{
+      padding: 2rem;
     }
   }
 }
