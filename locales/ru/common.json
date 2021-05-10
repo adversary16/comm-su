@@ -1,6 +1,7 @@
 {
   "test":"Это тестовый текст",
   "siteName": "Communications.su - Системная Интеграция",
+  "contacts": "Свяжитесь с нами", 
   "header": {
     "/":{ 
       "title": "Communications.su - Системная Интеграция"

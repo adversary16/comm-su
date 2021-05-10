@@ -14,8 +14,8 @@ const Index = () => {
     <Catalogue {...{t}}/>
     <SectionHeader {...{t, name: 'projectexamples'}}/>
     <GalleryStack {...{t, contentId: 'projectexamples'}}/>
-    <SectionHeader {...{t, name: 'contacts'}}/>
-    <ContactBlock/>
+    {/* <SectionHeader {...{t, name: 'contacts'}}/>
+    <ContactBlock/> */}
     {/* <ThreeColSection>
       <Feed type={'press'} columnStart={1} columnWidth={1}/>
       <Feed type={'news'} columnStart={2} columnWidth={2}/>

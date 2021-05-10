@@ -2,9 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/project": "pages/project.js",
   "/about": "pages/about.js",
-  "/api/content/getProjects": "pages/api/content/getProjects.js",
-  "/": "pages/index.js",
+  "/project": "pages/project.js",
   "/api/content/about": "pages/api/content/about.js"
 }
