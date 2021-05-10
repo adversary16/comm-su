@@ -19,3 +19,14 @@
     }
   }
 }
+
+@media screen and (max-width: 720px) {
+  .root{
+    display: flex;
+    flex-direction: column;
+    .gridItem{
+      width: unset;
+    }
+  }
+  
+}
