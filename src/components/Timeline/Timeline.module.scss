@@ -2,7 +2,6 @@
   background-color: var(--secondary);
   display: flex;
   padding: 1rem 0 0 0;
-  justify-content: center;
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
@@ -28,6 +27,7 @@
     font-weight: bold;
     justify-content: flex-start;
     height: 12rem;
+    width: 36rem;
     .title{
       display: block;
       border-left: solid 0.5rem var(--white);
@@ -36,6 +36,7 @@
     .content{
       padding: 0.5rem;
       font-size: 0.9rem;
+      width: 20rem;
     }
   }
   .year:nth-child(even){
