@@ -4,6 +4,7 @@
   "pages": {
     "*": ["common", "mailer"],
     "/": ["main"],
-    "/about": ["about"]
+    "/about": ["about"],
+    "/solution": ["solutions"]
   }
 }
