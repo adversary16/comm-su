@@ -7,8 +7,10 @@ import {Timeline} from '../../components/Timeline';
 import {PictureWall} from '../../components/PictureWall';
 import {DocumentList} from '../../components/DocumentList';
 import {PartnerList} from '../../components/PartnerList';
+import {GalleryStack} from '../../components/GalleryStack';
+
 const Index = (props) => {
-  const {logos, docs, partners} = props;
+  const {logos, docs, partners, board} = props;
   const {t} = useTranslation('about');
   return <>
     <ContentBlock id={'001'}/>
@@ -26,6 +28,7 @@ const Index = (props) => {
     <SectionHeader {...{t, name: 'career'}}/>
     <ContentBlock id={'009'}/>
     <SectionHeader {...{t, name: 'board'}}/>
+    <GalleryStack contentList={board}/>
   </>;
 };
 
@@ -35,12 +38,13 @@ export async function getServerSideProps(context) {
   const getQuery = await fetch(url, {
     method,
   });
-  const {logos, docs, partners} = await getQuery.json();
+  const {logos, docs, partners, board = []} = await getQuery.json();
   return {
     props: {
       logos,
       docs,
       partners,
+      board,
     },
   };
 }

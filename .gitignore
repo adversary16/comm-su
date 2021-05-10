@@ -1,4 +1,6 @@
-.next
+// .gitignore
+# next.js build output
+./.next
 # Logs
 logs
 *.log

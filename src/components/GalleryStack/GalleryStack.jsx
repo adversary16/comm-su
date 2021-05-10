@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './GalleryStack.module.scss';
 import {CONTENT_ITEMS} from '../../const/content';
-const GalleryStack = ({t, contentId}) => {
-  const content = CONTENT_ITEMS[contentId].map(({id, image}) => {
+import ReactHtmlParser from 'react-html-parser';
+import classNames from 'classnames';
+const GalleryStack = ({t, contentId, contentList, className}) => {
+  const content = contentList || CONTENT_ITEMS[contentId].map(({id, image}) => {
     const title = t(`contentItems.${id}.title`);
     const text = t(`contentItems.${id}.text`);
     return {
@@ -10,7 +12,7 @@ const GalleryStack = ({t, contentId}) => {
     };
   });
   return (
-    <div className={styles.root}>
+    <div className={classNames(styles.root, className)}>
       {
         content.map(({title, text, image, id, ...rest}) =>
           <div className={styles.entry} key={id}>
@@ -19,7 +21,7 @@ const GalleryStack = ({t, contentId}) => {
             </div>
             <div className={styles.description}>
               <div className={styles.title}>{title}</div>
-              <div className={styles.text}>{text}</div>
+              <div className={styles.text}>{ReactHtmlParser(text)}</div>
             </div>
           </div>,
         )}
