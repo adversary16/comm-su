@@ -27,12 +27,12 @@ const MenuButton = ({onClick}) => {
 const SubRouteMenu = ({subroutes, route, t}) => {
   return <div className={styles.sub_root}>
     {
-      subroutes.map(({path, isAnchor}, index) =>
-        <Link key={index} href={ isAnchor? `/${path}` : `#${path}`}>
+      Object.entries(subroutes).map(([key, value]) =>
+        <Link key={key} href={ value.isAnchor? `/${key}` : `#${key}`}>
           <div
             className={styles.link}
           >
-            {t(`header.${route}.subroutes.${path}.title`)}
+            {value.title}
           </div>
         </Link>)
     }
@@ -41,13 +41,14 @@ const SubRouteMenu = ({subroutes, route, t}) => {
 
 const GenericHeader = () => {
   const {asPath, locale, route} = useRouter();
+  const {t} = useTranslation('common');
+  const {title, subroutes} = t(`header.${route}`, {}, {returnObjects: true});
   const subRoutes = SUBPAGES[route];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     return setIsMenuOpen((prevState) => !prevState);
   };
 
-  const {t} = useTranslation('common');
   return <>
     <Head>
       <title>{t(`header.${route}.title`)}</title>
@@ -74,7 +75,7 @@ const GenericHeader = () => {
       <MenuButton onClick={toggleMenu}/>
     </div>
     {
-      subRoutes && <SubRouteMenu subroutes={subRoutes} route={route} t={t}/>
+      subroutes && <SubRouteMenu subroutes={subroutes} route={route} t={t}/>
     }
   </>;
 };

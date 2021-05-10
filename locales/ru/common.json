@@ -17,7 +17,18 @@
         "board": {  "title": "Руководящий состав"}
       }
     },
-    "/solution": { "title": "Решения"},
+    "/solution": {
+       "title": "Решения",
+       "subroutes": {
+        "dispatcher":{ "title": "Диспетчерская громкоговорящая связь"},
+        "industrial": { "title": "Промышленная радиосвязь"},
+        "local": { "title": "Локальные системы оповещения"},
+        "emergency": { "title": "Система экстренного вызова"},
+        "multipurpose": { "title": "Многофункциональная система безопасности для горнорудного сектора"},
+        "health": { "title": "Решения для инфекционной безопасности предприятий"},
+        "nonproject": {  "title": "Непроектные продажи"}
+      }
+      },
     "/project": {"title": "Проекты"},
     "/support": {"title": "Поддержка"},
     "/programma-po-sodejstviyu-proektirovshchikam": { "title": "Проектировщикам"},
