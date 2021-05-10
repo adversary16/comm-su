@@ -1,9 +1,25 @@
 .root{
   background-color: var(--secondary);
   display: flex;
-  height: 20rem;
   padding: 1rem 0 0 0;
   justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  &::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.3em;
+  }
+   
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  
   .year{
     position: relative;
     display: flex;
@@ -11,8 +27,7 @@
     color: var(--white);
     font-weight: bold;
     justify-content: flex-start;
-    height: 10rem;
-    width: 20rem;
+    height: 12rem;
     .title{
       display: block;
       border-left: solid 0.5rem var(--white);
@@ -29,7 +44,7 @@
   }
   .year:nth-child(odd){
     border-top: solid 0.5rem var(--white);
-    margin-top: 10rem;
+    margin-top: 12rem;
 
   }
 }

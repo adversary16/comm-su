@@ -1,9 +1,9 @@
 .root{
   width: var(--blockWidth);
-  min-width: var(--minBlockWidth);
+  // min-width: var(--minBlockWidth);
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  margin: 2rem 20%;
+  grid-template-columns: repeat(3,30%);
+  margin: 2rem auto;
   gap: 2rem;
 
   .gridItem{
@@ -13,6 +13,8 @@
     display: flex;
     div[class*=content]{
       font-size: 0.9rem;
+      width: 80%;
+      margin: 1rem auto;
     }
   }
 }
