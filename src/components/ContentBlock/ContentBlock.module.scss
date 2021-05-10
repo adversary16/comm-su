@@ -3,7 +3,7 @@
   flex-direction: column;
   width: var(--blockWidth);
   min-width: var(--minBlockWidth);
-  margin: 1rem 20% 1rem 20%;
+  margin: 1rem auto;
   .header {
     display: flex;
     color: var(--primary);

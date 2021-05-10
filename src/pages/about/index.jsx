@@ -6,8 +6,9 @@ import {InBlockGrid} from '../../components/InBlockGrid';
 import {Timeline} from '../../components/Timeline';
 import {PictureWall} from '../../components/PictureWall';
 import {DocumentList} from '../../components/DocumentList';
+import {PartnerList} from '../../components/PartnerList';
 const Index = (props) => {
-  const {logos, docs} = props;
+  const {logos, docs, partners} = props;
   const {t} = useTranslation('about');
   return <>
     <ContentBlock id={'001'}/>
@@ -21,6 +22,7 @@ const Index = (props) => {
     <ContentBlock id={'008'}/>
     <DocumentList docs={docs}/>
     <SectionHeader {...{t, name: 'partners'}}/>
+    <PartnerList partners={partners}/>
     <SectionHeader {...{t, name: 'career'}}/>
     <ContentBlock id={'009'}/>
     <SectionHeader {...{t, name: 'board'}}/>
@@ -33,11 +35,12 @@ export async function getServerSideProps(context) {
   const getQuery = await fetch(url, {
     method,
   });
-  const {logos, docs} = await getQuery.json();
+  const {logos, docs, partners} = await getQuery.json();
   return {
     props: {
       logos,
       docs,
+      partners,
     },
   };
 }

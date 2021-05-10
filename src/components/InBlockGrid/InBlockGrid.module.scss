@@ -1,13 +1,14 @@
 .root{
-  width: var(--blockWidth);
+  // width: var(--blockWidth);
   // min-width: var(--minBlockWidth);
-  display: grid;
-  grid-template-columns: repeat(3,30%);
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: scroll;
   margin: 2rem auto;
   gap: 2rem;
 
   .gridItem{
-    width: 100%;
+    width: 40rem;
     margin: 0;
     padding: 0;
     display: flex;

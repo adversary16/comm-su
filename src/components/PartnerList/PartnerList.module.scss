@@ -1,0 +1,319 @@
+.root{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: scroll;
+  .item:nth-child(even){
+    background-color: var(--primary);
+    color: var(--white)
+  }
+
+  .item{
+    color: var(--primary);
+    width: 100%;
+    .header, .description{
+      padding: 2rem;
+    }
+    .header{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      .title{
+        line-height: 1rem;
+        font-weight: 700;
+        height: 1rem;
+        margin: auto 1rem;
+      }
+      .country{
+        width: 2rem;
+        height:1rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1rem;
+        // background-image: url('../../countries/' var(--country));
+      }
+      .logo{
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        background-color: var(--white);
+        border-radius: 2rem;
+        align-content: center;
+        justify-content: center;
+        img {
+          width: 80%;
+          height: auto;
+          margin: auto 0;
+        }
+    }
+    }
+    .description{
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .root{
+    display: flex;
+    flex-direction: column;
+    .item {
+      width: 100%
+    }
+  }
+}
+
+.country_AD { background-image: var(--country-AD) } 
+ .country_AE { background-image: var(--country-AE) } 
+ .country_AF { background-image: var(--country-AF) } 
+ .country_AG { background-image: var(--country-AG) } 
+ .country_AI { background-image: var(--country-AI) } 
+ .country_AL { background-image: var(--country-AL) } 
+ .country_AM { background-image: var(--country-AM) } 
+ .country_AO { background-image: var(--country-AO) } 
+ .country_AR { background-image: var(--country-AR) } 
+ .country_AS { background-image: var(--country-AS) } 
+ .country_AT { background-image: var(--country-AT) } 
+ .country_AU { background-image: var(--country-AU) } 
+ .country_AW { background-image: var(--country-AW) } 
+ .country_AX { background-image: var(--country-AX) } 
+ .country_AZ { background-image: var(--country-AZ) } 
+ .country_BA { background-image: var(--country-BA) } 
+ .country_BB { background-image: var(--country-BB) } 
+ .country_BD { background-image: var(--country-BD) } 
+ .country_BE { background-image: var(--country-BE) } 
+ .country_BF { background-image: var(--country-BF) } 
+ .country_BG { background-image: var(--country-BG) } 
+ .country_BH { background-image: var(--country-BH) } 
+ .country_BI { background-image: var(--country-BI) } 
+ .country_BJ { background-image: var(--country-BJ) } 
+ .country_BL { background-image: var(--country-BL) } 
+ .country_BM { background-image: var(--country-BM) } 
+ .country_BN { background-image: var(--country-BN) } 
+ .country_BO { background-image: var(--country-BO) } 
+ .country_BR { background-image: var(--country-BR) } 
+ .country_BS { background-image: var(--country-BS) } 
+ .country_BT { background-image: var(--country-BT) } 
+ .country_BV { background-image: var(--country-BV) } 
+ .country_BW { background-image: var(--country-BW) } 
+ .country_BY { background-image: var(--country-BY) } 
+ .country_BZ { background-image: var(--country-BZ) } 
+ .country_CA { background-image: var(--country-CA) } 
+ .country_CC { background-image: var(--country-CC) } 
+ .country_CD { background-image: var(--country-CD) } 
+ .country_CF { background-image: var(--country-CF) } 
+ .country_CG { background-image: var(--country-CG) } 
+ .country_CH { background-image: var(--country-CH) } 
+ .country_CI { background-image: var(--country-CI) } 
+ .country_CK { background-image: var(--country-CK) } 
+ .country_CL { background-image: var(--country-CL) } 
+ .country_CM { background-image: var(--country-CM) } 
+ .country_CN { background-image: var(--country-CN) } 
+ .country_CO { background-image: var(--country-CO) } 
+ .country_CR { background-image: var(--country-CR) } 
+ .country_CU { background-image: var(--country-CU) } 
+ .country_CV { background-image: var(--country-CV) } 
+ .country_CW { background-image: var(--country-CW) } 
+ .country_CX { background-image: var(--country-CX) } 
+ .country_CY { background-image: var(--country-CY) } 
+ .country_CZ { background-image: var(--country-CZ) } 
+ .country_DE { background-image: var(--country-DE) } 
+ .country_DJ { background-image: var(--country-DJ) } 
+ .country_DK { background-image: var(--country-DK) } 
+ .country_DM { background-image: var(--country-DM) } 
+ .country_DO { background-image: var(--country-DO) } 
+ .country_DZ { background-image: var(--country-DZ) } 
+ .country_EC { background-image: var(--country-EC) } 
+ .country_EE { background-image: var(--country-EE) } 
+ .country_EG { background-image: var(--country-EG) } 
+ .country_ER { background-image: var(--country-ER) } 
+ .country_ES { background-image: var(--country-ES) } 
+ .country_ET { background-image: var(--country-ET) } 
+ .country_EU { background-image: var(--country-EU) } 
+ .country_FI { background-image: var(--country-FI) } 
+ .country_FJ { background-image: var(--country-FJ) } 
+ .country_FK { background-image: var(--country-FK) } 
+ .country_FM { background-image: var(--country-FM) } 
+ .country_FO { background-image: var(--country-FO) } 
+ .country_FR { background-image: var(--country-FR) } 
+ .country_GA { background-image: var(--country-GA) } 
+ .country_GB-ENG { background-image: var(--country-GB-ENG) } 
+ .country_GB-NIR { background-image: var(--country-GB-NIR) } 
+ .country_GB-SCT { background-image: var(--country-GB-SCT) } 
+ .country_GB-WLS { background-image: var(--country-GB-WLS) } 
+ .country_GB-ZET { background-image: var(--country-GB-ZET) } 
+ .country_GB { background-image: var(--country-GB) } 
+ .country_GD { background-image: var(--country-GD) } 
+ .country_GE { background-image: var(--country-GE) } 
+ .country_GF { background-image: var(--country-GF) } 
+ .country_GG { background-image: var(--country-GG) } 
+ .country_GH { background-image: var(--country-GH) } 
+ .country_GI { background-image: var(--country-GI) } 
+ .country_GL { background-image: var(--country-GL) } 
+ .country_GM { background-image: var(--country-GM) } 
+ .country_GN { background-image: var(--country-GN) } 
+ .country_GP { background-image: var(--country-GP) } 
+ .country_GQ { background-image: var(--country-GQ) } 
+ .country_GR { background-image: var(--country-GR) } 
+ .country_GS { background-image: var(--country-GS) } 
+ .country_GT { background-image: var(--country-GT) } 
+ .country_GU { background-image: var(--country-GU) } 
+ .country_GW { background-image: var(--country-GW) } 
+ .country_GY { background-image: var(--country-GY) } 
+ .country_HK { background-image: var(--country-HK) } 
+ .country_HM { background-image: var(--country-HM) } 
+ .country_HN { background-image: var(--country-HN) } 
+ .country_HR { background-image: var(--country-HR) } 
+ .country_HT { background-image: var(--country-HT) } 
+ .country_HU { background-image: var(--country-HU) } 
+ .country_ID { background-image: var(--country-ID) } 
+ .country_IE { background-image: var(--country-IE) } 
+ .country_IL { background-image: var(--country-IL) } 
+ .country_IM { background-image: var(--country-IM) } 
+ .country_IN { background-image: var(--country-IN) } 
+ .country_IO { background-image: var(--country-IO) } 
+ .country_IQ { background-image: var(--country-IQ) } 
+ .country_IR { background-image: var(--country-IR) } 
+ .country_IS { background-image: var(--country-IS) } 
+ .country_IT { background-image: var(--country-IT) } 
+ .country_JE { background-image: var(--country-JE) } 
+ .country_JM { background-image: var(--country-JM) } 
+ .country_JO { background-image: var(--country-JO) } 
+ .country_JP { background-image: var(--country-JP) } 
+ .country_KE { background-image: var(--country-KE) } 
+ .country_KG { background-image: var(--country-KG) } 
+ .country_KH { background-image: var(--country-KH) } 
+ .country_KI { background-image: var(--country-KI) } 
+ .country_KM { background-image: var(--country-KM) } 
+ .country_KN { background-image: var(--country-KN) } 
+ .country_KP { background-image: var(--country-KP) } 
+ .country_KR { background-image: var(--country-KR) } 
+ .country_KW { background-image: var(--country-KW) } 
+ .country_KY { background-image: var(--country-KY) } 
+ .country_KZ { background-image: var(--country-KZ) } 
+ .country_LA { background-image: var(--country-LA) } 
+ .country_LB { background-image: var(--country-LB) } 
+ .country_LC { background-image: var(--country-LC) } 
+ .country_LGBT { background-image: var(--country-LGBT) } 
+ .country_LI { background-image: var(--country-LI) } 
+ .country_LK { background-image: var(--country-LK) } 
+ .country_LR { background-image: var(--country-LR) } 
+ .country_LS { background-image: var(--country-LS) } 
+ .country_LT { background-image: var(--country-LT) } 
+ .country_LU { background-image: var(--country-LU) } 
+ .country_LV { background-image: var(--country-LV) } 
+ .country_LY { background-image: var(--country-LY) } 
+ .country_MA { background-image: var(--country-MA) } 
+ .country_MC { background-image: var(--country-MC) } 
+ .country_MD { background-image: var(--country-MD) } 
+ .country_ME { background-image: var(--country-ME) } 
+ .country_MF { background-image: var(--country-MF) } 
+ .country_MG { background-image: var(--country-MG) } 
+ .country_MH { background-image: var(--country-MH) } 
+ .country_MK { background-image: var(--country-MK) } 
+ .country_ML { background-image: var(--country-ML) } 
+ .country_MM { background-image: var(--country-MM) } 
+ .country_MN { background-image: var(--country-MN) } 
+ .country_MO { background-image: var(--country-MO) } 
+ .country_MP { background-image: var(--country-MP) } 
+ .country_MQ { background-image: var(--country-MQ) } 
+ .country_MR { background-image: var(--country-MR) } 
+ .country_MS { background-image: var(--country-MS) } 
+ .country_MT { background-image: var(--country-MT) } 
+ .country_MU { background-image: var(--country-MU) } 
+ .country_MV { background-image: var(--country-MV) } 
+ .country_MW { background-image: var(--country-MW) } 
+ .country_MX { background-image: var(--country-MX) } 
+ .country_MY { background-image: var(--country-MY) } 
+ .country_MZ { background-image: var(--country-MZ) } 
+ .country_NA { background-image: var(--country-NA) } 
+ .country_NC { background-image: var(--country-NC) } 
+ .country_NE { background-image: var(--country-NE) } 
+ .country_NF { background-image: var(--country-NF) } 
+ .country_NG { background-image: var(--country-NG) } 
+ .country_NI { background-image: var(--country-NI) } 
+ .country_NL { background-image: var(--country-NL) } 
+ .country_NO { background-image: var(--country-NO) } 
+ .country_NP { background-image: var(--country-NP) } 
+ .country_NR { background-image: var(--country-NR) } 
+ .country_NU { background-image: var(--country-NU) } 
+ .country_NZ { background-image: var(--country-NZ) } 
+ .country_OM { background-image: var(--country-OM) } 
+ .country_PA { background-image: var(--country-PA) } 
+ .country_PE { background-image: var(--country-PE) } 
+ .country_PF { background-image: var(--country-PF) } 
+ .country_PG { background-image: var(--country-PG) } 
+ .country_PH { background-image: var(--country-PH) } 
+ .country_PK { background-image: var(--country-PK) } 
+ .country_PL { background-image: var(--country-PL) } 
+ .country_PM { background-image: var(--country-PM) } 
+ .country_PN { background-image: var(--country-PN) } 
+ .country_PR { background-image: var(--country-PR) } 
+ .country_PS { background-image: var(--country-PS) } 
+ .country_PT { background-image: var(--country-PT) } 
+ .country_PW { background-image: var(--country-PW) } 
+ .country_PY { background-image: var(--country-PY) } 
+ .country_QA { background-image: var(--country-QA) } 
+ .country_RE { background-image: var(--country-RE) } 
+ .country_RO { background-image: var(--country-RO) } 
+ .country_RS { background-image: var(--country-RS) } 
+ .country_RU { background-image: var(--country-RU) } 
+ .country_RW { background-image: var(--country-RW) } 
+ .country_SA { background-image: var(--country-SA) } 
+ .country_SB { background-image: var(--country-SB) } 
+ .country_SC { background-image: var(--country-SC) } 
+ .country_SD { background-image: var(--country-SD) } 
+ .country_SE { background-image: var(--country-SE) } 
+ .country_SG { background-image: var(--country-SG) } 
+ .country_SH { background-image: var(--country-SH) } 
+ .country_SI { background-image: var(--country-SI) } 
+ .country_SJ { background-image: var(--country-SJ) } 
+ .country_SK { background-image: var(--country-SK) } 
+ .country_SL { background-image: var(--country-SL) } 
+ .country_SM { background-image: var(--country-SM) } 
+ .country_SN { background-image: var(--country-SN) } 
+ .country_SO { background-image: var(--country-SO) } 
+ .country_SR { background-image: var(--country-SR) } 
+ .country_SS { background-image: var(--country-SS) } 
+ .country_ST { background-image: var(--country-ST) } 
+ .country_SV { background-image: var(--country-SV) } 
+ .country_SX { background-image: var(--country-SX) } 
+ .country_SY { background-image: var(--country-SY) } 
+ .country_SZ { background-image: var(--country-SZ) } 
+ .country_TC { background-image: var(--country-TC) } 
+ .country_TD { background-image: var(--country-TD) } 
+ .country_TF { background-image: var(--country-TF) } 
+ .country_TG { background-image: var(--country-TG) } 
+ .country_TH { background-image: var(--country-TH) } 
+ .country_TJ { background-image: var(--country-TJ) } 
+ .country_TK { background-image: var(--country-TK) } 
+ .country_TL { background-image: var(--country-TL) } 
+ .country_TM { background-image: var(--country-TM) } 
+ .country_TN { background-image: var(--country-TN) } 
+ .country_TO { background-image: var(--country-TO) } 
+ .country_TR { background-image: var(--country-TR) } 
+ .country_TT { background-image: var(--country-TT) } 
+ .country_TV { background-image: var(--country-TV) } 
+ .country_TW { background-image: var(--country-TW) } 
+ .country_TZ { background-image: var(--country-TZ) } 
+ .country_UA { background-image: var(--country-UA) } 
+ .country_UG { background-image: var(--country-UG) } 
+ .country_UM { background-image: var(--country-UM) } 
+ .country_US-CA { background-image: var(--country-US-CA) } 
+ .country_US { background-image: var(--country-US) } 
+ .country_UY { background-image: var(--country-UY) } 
+ .country_UZ { background-image: var(--country-UZ) } 
+ .country_VA { background-image: var(--country-VA) } 
+ .country_VC { background-image: var(--country-VC) } 
+ .country_VE { background-image: var(--country-VE) } 
+ .country_VG { background-image: var(--country-VG) } 
+ .country_VI { background-image: var(--country-VI) } 
+ .country_VN { background-image: var(--country-VN) } 
+ .country_VU { background-image: var(--country-VU) } 
+ .country_WF { background-image: var(--country-WF) } 
+ .country_WS { background-image: var(--country-WS) } 
+ .country_XK { background-image: var(--country-XK) } 
+ .country_YE { background-image: var(--country-YE) } 
+ .country_YT { background-image: var(--country-YT) } 
+ .country_ZA { background-image: var(--country-ZA) } 
+ .country_ZM { background-image: var(--country-ZM) } 
+ .country_ZW { background-image: var(--country-ZW) }
