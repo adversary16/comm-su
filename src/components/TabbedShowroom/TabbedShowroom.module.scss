@@ -105,3 +105,24 @@ justify-content: center;
     }
   }
 }
+
+@media screen and (max-width: 720px) {
+  .root{
+    display: flex;
+    flex-direction: column;
+    .contents_root{
+      display: flex;
+      flex-direction: row;
+    }
+    .main_root{
+      display: flex;
+      flex-direction: column;
+      .image{
+        width: 100%;
+        height: 10rem;
+        background-size: 16rem;
+      }
+    }
+  }
+  
+}
