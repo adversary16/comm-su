@@ -10,8 +10,8 @@
       "subroutes": {
         "history":{ "title": "История"},
         "clients": { "title": "Клиенты"},
-        "partners": { "title": "Партнёры"},
         "policy": { "title": "Политика качества"},
+        "partners": { "title": "Партнёры"},
         "feedback": { "title": "Отзывы"},
         "career": { "title": "Карьера"},
         "board": {  "title": "Руководящий состав"}

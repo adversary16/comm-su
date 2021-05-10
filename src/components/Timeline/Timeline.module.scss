@@ -1,5 +1,6 @@
 .root{
-  background-color: var(--secondary);
+  background-color: var(--white);
+  color: var(--primary);
   display: flex;
   padding: 1rem 0 0 0;
   overflow-x: scroll;
@@ -15,7 +16,7 @@
   }
    
   &::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
+    background-color: var(--tertiary);
     outline: 1px solid slategrey;
   }
   
@@ -30,10 +31,12 @@
     width: 36rem;
     .title{
       display: block;
-      border-left: solid 0.5rem var(--white);
+      border-left: solid 0.5rem var(--secondary);
+      color: var(--primary);
       padding: 0.5rem;
     }
     .content{
+      color: var(--primary);
       padding: 0.5rem;
       font-size: 0.9rem;
       width: 20rem;
@@ -41,10 +44,10 @@
   }
   .year:nth-child(even){
     justify-content: flex-end;
-    border-bottom: solid 0.5rem var(--white);
+    border-bottom: solid 0.5rem var(--secondary);
   }
   .year:nth-child(odd){
-    border-top: solid 0.5rem var(--white);
+    border-top: solid 0.5rem var(--secondary);
     margin-top: 12rem;
 
   }

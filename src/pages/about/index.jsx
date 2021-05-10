@@ -5,8 +5,9 @@ import {ContentBlock} from '../../components/ContentBlock';
 import {InBlockGrid} from '../../components/InBlockGrid';
 import {Timeline} from '../../components/Timeline';
 import {PictureWall} from '../../components/PictureWall';
+import {DocumentList} from '../../components/DocumentList';
 const Index = (props) => {
-  const {logos} = props;
+  const {logos, docs} = props;
   const {t} = useTranslation('about');
   return <>
     <ContentBlock id={'001'}/>
@@ -17,22 +18,26 @@ const Index = (props) => {
     <SectionHeader {...{t, name: 'clients'}}/>
     <PictureWall pictures={logos}/>
     <SectionHeader {...{t, name: 'policy'}}/>
+    <ContentBlock id={'008'}/>
+    <DocumentList docs={docs}/>
     <SectionHeader {...{t, name: 'partners'}}/>
     <SectionHeader {...{t, name: 'career'}}/>
+    <ContentBlock id={'009'}/>
     <SectionHeader {...{t, name: 'board'}}/>
   </>;
 };
 
 export async function getServerSideProps(context) {
-  const url = 'http://localhost:3000/api/clients/getLogos';
+  const url = 'http://localhost:3000/api/content/about';
   const method = 'GET';
   const getQuery = await fetch(url, {
     method,
   });
-  const logos = await getQuery.json();
+  const {logos, docs} = await getQuery.json();
   return {
     props: {
       logos,
+      docs,
     },
   };
 }

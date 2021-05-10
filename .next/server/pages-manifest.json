@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/about": "pages/about.js",
-  "/api/clients/getLogos": "pages/api/clients/getLogos.js",
-  "/solution": "pages/solution.js"
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js",
+  "/api/content/about": "pages/api/content/about.js"
 }
