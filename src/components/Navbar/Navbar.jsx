@@ -79,7 +79,7 @@ const Navbar = ({isMenuOpen}) => {
   const {mainRoutes, secondaryRoutes} = Object.entries(ROUTES)
       .reduce( (acc, [alias, route]) => {
         const {mainRoutes, secondaryRoutes} = acc;
-        if (route.navBar) {
+        if (route.topBar) {
           return {
             mainRoutes: {...mainRoutes, [alias]: route},
             secondaryRoutes,
@@ -97,25 +97,29 @@ const Navbar = ({isMenuOpen}) => {
       });
 
   return <div className={classNames(styles.root, isMenuOpen && styles.isOpen)}>
-    {
-      Object.entries(mainRoutes).map(([alias, properties]) =>
-        <Link
-          href={alias}
-          key={alias}
-        ><a
-            className={
-              classNames(styles.link, (route === alias) && styles.current)
-            }>
-            {t(`header.${alias}.title`)}
-          </a>
-        </Link>,
-      )
-    }
-    {
+    <div className={styles.contents}>
+      <div className={styles.linkBlock}>
+        {
+          Object.entries(mainRoutes).map(([alias, properties]) =>
+            <Link
+              href={alias}
+              key={alias}
+            ><a
+                className={
+                  classNames(styles.link, (route === alias) && styles.current)
+                }>
+                {t(`header.${alias}.title`).toUpperCase()}
+              </a>
+            </Link>,
+          )
+        }
+      </div>
+      {/* {
       secondaryRoutes && <SecondaryMenu { ...{secondaryRoutes, t, route}}/>
-    }
-    <ContactBlock {...{t}}/>
-    <LocaleToggler/>
+    } */}
+      {/* <ContactBlock {...{t}}/> */}
+      <LocaleToggler/>
+    </div>
   </div>;
 };
 export default Navbar;

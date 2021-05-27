@@ -10,7 +10,6 @@ const Index = () => {
   const {t} = useTranslation('main');
   return <>
     <Banner/>
-    <SectionHeader {...{t, name: 'systemsolutions'}}/>
     <Catalogue {...{t}}/>
     <SectionHeader {...{t, name: 'projectexamples'}}/>
     <GalleryStack {...{t, contentId: 'projectexamples'}}/>

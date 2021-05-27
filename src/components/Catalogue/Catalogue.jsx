@@ -9,20 +9,22 @@ const Catalogue = ({t}) => {
   const {route} = useRouter();
   const currentCat = CATALOGUES[route];
   return <div className={styles.root}>
-    {
-      currentCat && currentCat.map(({id, image, icon, link}) =>
-        <div key={id} className={styles.catalogue_item}>
-          { icon &&
+    <div className={styles.contents}>
+      {
+        currentCat && currentCat.map(({id, image, icon, link}) =>
+          <div key={id} className={styles.catalogue_item}>
+            {/* { icon &&
           <div className={styles.icon_overlay}>
             <div className={classNames(styles.icon, styles[icon])} />
           </div>
-          }
-          <div className={styles.caption_overlay}>
-            <a href={link}>{t(`${'catalogue'}.${id}`)}</a>
-          </div>
-        </div>,
-      )
-    }
+          } */}
+            <div className={styles.caption_overlay}>
+              <a href={link}>{t(`${'catalogue'}.${id}`)}</a>
+            </div>
+          </div>,
+        )
+      }
+    </div>
   </div>;
 };
 export default Catalogue;

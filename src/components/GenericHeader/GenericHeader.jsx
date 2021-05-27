@@ -53,10 +53,10 @@ const GenericHeader = () => {
     <Head>
       <title>{t(`header.${route}.title`)}</title>
       <link rel="preconnect" href="https://fonts.gstatic.com"/>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"/>
       <meta
         property="og:title"
-        content="Системный интегратор COMMUNICATIONS.SU"
+        content="Комплекснные Коммуникации -- системный интегратор."
       />
       <meta
         property="og:description"
@@ -68,12 +68,12 @@ const GenericHeader = () => {
       />
     </Head>
     <div className={styles.root}>
-      <Logo
-        {...{locale}}
-      />
       <Navbar {...{isMenuOpen}}/>
       <MenuButton onClick={toggleMenu}/>
     </div>
+    <Logo
+      {...{locale}}
+    />
     {
       subroutes && <SubRouteMenu subroutes={subroutes} route={route} t={t}/>
     }

@@ -35,7 +35,10 @@
     "/programma-po-sodejstviyu-proektirovshchikam": { "title": "Проектировщикам"},
     "/svyaz-s-nami":{"title": "Контакты"},
     "/blog": {"title": "Блог"},
-    "/press": {"title": "Пресс-центр"}
+    "/press": {"title": "Публикации"},
+    "/news": {
+      "title": "Новости"
+    }
   },
   "phoneNumber":"+7 (800) 700-94-83"
 }

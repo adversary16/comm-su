@@ -1,26 +1,31 @@
 export const ROUTES = {
   '/about': {
-    navBar: true,
+    navBar: false,
   },
   '/solution': {
-    navBar: true,
+    navBar: false,
   },
   '/project': {
-    navBar: true,
+    navBar: false,
   },
   '/support': {
-    navBar: true,
+    topBar: true,
   },
   '/programma-po-sodejstviyu-proektirovshchikam': {
-    navBar: true,
+    topBar: true,
   },
   '/svyaz-s-nami': {
-    navBar: true,
+    navBar: false,
   },
   '/blog': {
+    topBar: true,
     icon: 'blog',
   },
+  '/news': {
+    topBar: true,
+  },
   '/press': {
+    topBar: true,
     icon: 'press',
   },
 };
