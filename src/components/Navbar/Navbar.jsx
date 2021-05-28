@@ -76,21 +76,22 @@ const LocaleToggler = () => {
 const Navbar = ({isMenuOpen}) => {
   const {route} = useRouter();
   const {t} = useTranslation('common');
+  // const mainRoutes = Object.entries(ROUTES)
+  //     .filter(([alias, route]) => route.topBar);
+
+  // const secondaryRoutes = Object.entries(ROUTES)
+  //     .filter(([alias, routes]) => routes.secondaryBar);
+
   const {mainRoutes, secondaryRoutes} = Object.entries(ROUTES)
-      .reduce( (acc, [alias, route]) => {
+      .reduce((acc, [alias, route]) => {
         const {mainRoutes, secondaryRoutes} = acc;
-        if (route.topBar) {
-          return {
-            mainRoutes: {...mainRoutes, [alias]: route},
+        const {topBar, secondaryBar} = route;
+        return {
+          mainRoutes: topBar ? {...mainRoutes, [alias]: route} : mainRoutes,
+          secondaryRoutes: secondaryBar ?
+           {...secondaryRoutes, [alias]: route} :
             secondaryRoutes,
-          };
         };
-        return {mainRoutes,
-          secondaryRoutes:
-        {
-          ...secondaryRoutes,
-          [alias]: route,
-        }};
       }, {
         mainRoutes: {},
         secondaryRoutes: {},
@@ -114,9 +115,19 @@ const Navbar = ({isMenuOpen}) => {
           )
         }
       </div>
-      {/* {
-      secondaryRoutes && <SecondaryMenu { ...{secondaryRoutes, t, route}}/>
-    } */}
+      {
+        secondaryRoutes &&
+        Object.entries(secondaryRoutes).map(([alias, properties]) => {
+          <Link href="alias">
+            <a
+              className={
+                classNames(styles.link, (route === alias) && styles.current)
+              }>
+              {t(`header.${alias}.title`).toUpperCase()}
+            </a>
+          </Link>;
+        })
+      }
       {/* <ContactBlock {...{t}}/> */}
       <LocaleToggler/>
     </div>

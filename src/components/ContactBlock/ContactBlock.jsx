@@ -11,6 +11,7 @@ const ContactBlock = () => {
   const {t} = useTranslation('common');
   return <div className={styles.root}>
     <div className={styles.contentblock}>
+      <span className={styles.title}>НАШИ КОНТАКТЫ</span>
       <Link href={`phone://${t('phoneNumber')}`}>
         <span className={styles.phone}>{t('phoneNumber')}</span>
       </Link>

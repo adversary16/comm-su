@@ -72,12 +72,9 @@ const GenericHeader = () => {
       <MenuButton onClick={toggleMenu}/>
     </div>
     <div className={styles.secondaryRow}>
-    <Logo
-      {...{locale}}
-    />
-    {
-      subroutes && <SubRouteMenu subroutes={subroutes} route={route} t={t}/>
-    }
+      <Logo
+        {...{locale}}
+      />
     </div>
   </>;
 };

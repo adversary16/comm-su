@@ -5,7 +5,7 @@ import styles from './MailForm.module.scss';
 const MailForm = ({className}) => {
   const {t} = useTranslation('mailer');
   return <div className={classNames(className, styles.root)}>
-    <span className={styles.header}>Напишите нам</span>
+    <span className={styles.header}>{t('mailCaption')}</span>
     <form>
       <span>
         <input
@@ -28,13 +28,13 @@ const MailForm = ({className}) => {
         <input name="query"
           placeholder={t('query')}
         />
-        <label>
+        {/* <label>
           <input name="allowpersonal" type="checkbox"/>
           {t('allowpersonal')}
-        </label>
+        </label> */}
       </span>
+      <button>{t('submit')}</button>
     </form>
-    <button>{t('submit')}</button>
   </div>;
 };
 export default MailForm;

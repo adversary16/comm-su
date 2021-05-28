@@ -1,12 +1,15 @@
 export const ROUTES = {
   '/about': {
     navBar: false,
+    secondaryBar: true,
   },
   '/solution': {
     navBar: false,
+    secondaryBar: true,
   },
   '/project': {
     navBar: false,
+    secondaryBar: true,
   },
   '/support': {
     topBar: true,
@@ -16,6 +19,7 @@ export const ROUTES = {
   },
   '/svyaz-s-nami': {
     navBar: false,
+    secondaryBar: true,
   },
   '/blog': {
     topBar: true,
