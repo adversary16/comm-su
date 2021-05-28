@@ -6,7 +6,7 @@ import useTranslation from 'next-translate/useTranslation';
 const GenericFooter = () => {
   const {t} = useTranslation('common');
   return <>
-    <SectionHeader {...{t, name: 'contacts'}}/>
+    {/* <SectionHeader {...{t, name: 'contacts'}}/> */}
     <ContactBlock/>
   </>;
 };
