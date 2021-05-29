@@ -79,6 +79,7 @@ typings/
 .cache
 
 # Next.js build output
+src/.next
 .next
 
 # Nuxt.js build / generate output

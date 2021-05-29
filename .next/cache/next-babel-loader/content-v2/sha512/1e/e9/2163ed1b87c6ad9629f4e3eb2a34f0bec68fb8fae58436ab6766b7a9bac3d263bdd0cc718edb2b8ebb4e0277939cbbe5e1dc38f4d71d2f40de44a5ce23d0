@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default as Banner } from './Banner';","map":{"version":3,"sources":["/home/nikita/comm-su/src/components/Banner/index.js"],"names":["default","Banner"],"mappings":"AAAA,SAAQA,OAAO,IAAIC,MAAnB,QAAgC,UAAhC","sourcesContent":["export {default as Banner} from './Banner'\n"]},"metadata":{},"sourceType":"module"}
